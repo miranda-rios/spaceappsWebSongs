@@ -1,18 +1,7 @@
-import sys
-import subprocess
 from scripts.a_ImageProcessor import ImageProcessor
 from scripts.b_WavelengthToMIDIConverter import WavelengthToMIDIConverter
 from scripts.c_MIDIPortHandler import MIDIPortHandler
 
-# Ruta relativa del proyecto y entorno virtual
-project_dir = os.path.dirname(os.path.abspath(__file__))
-venv_python = os.path.join(project_dir, "venv", "bin", "python.exe")
-
-# Verifica si el entorno virtual está activado
-if sys.executable != venv_python:
-    print(f"Activando el entorno virtual en {venv_python}...")
-    subprocess.run([venv_python] + sys.argv)
-    sys.exit()
 
 # Procesamiento de imagen
 image_path = os.path.join(project_dir, "Imagenes", "NGC 7496.tif")
