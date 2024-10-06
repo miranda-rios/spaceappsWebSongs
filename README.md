@@ -1,10 +1,10 @@
-#Project: WebbSounds
+# Project: WebbSounds
 
 <p align="center"> <img src="logo.jpeg" width="500" height="500" /> </p>
 
 This project, developed by members of the astronomy research group during the NASA Space Apps 2024 event, aims to convert astronomical image data into musical notes. By utilizing image processing techniques and spectral analysis, sampled points from images are generated, and wavelengths are transformed into MIDI notes, which are sent through MIDI ports for playback.
 
-##Project Members
+## Project Members
 
   Lina Alejandra Gonzalez-Ramirez
   Juan Steven Cardona-Grisales
@@ -13,7 +13,7 @@ This project, developed by members of the astronomy research group during the NA
   Froilan Esteban Moreno-Galeano
   Liz Andrea Zuñiga-Ballesteros
 
-##Required Libraries
+## Required Libraries
 
 To run this code, you need to install the following libraries in Python:
 
@@ -21,7 +21,7 @@ To run this code, you need to install the following libraries in Python:
 pip install numpy opencv-python pandas mido keyboard
 ```
 
-##Code Usage
+## Code Usage
 Prepare the Environment:
 
 Ensure that the required libraries are installed.
@@ -43,7 +43,7 @@ The main code, named musicFromUniverse.py, manages the execution flow. Ensure th
 └── musicFromUniverse.py
 ```
 
-##Configure Parameters:
+## Configure Parameters:
 
 Edit the variables in musicFromUniverse.py as needed:
 
@@ -53,7 +53,7 @@ Edit the variables in musicFromUniverse.py as needed:
   outputMIDI_csv: Name of the CSV file to save the MIDI notes.
   threshold: Threshold for the light mask.
 
-##Run the Program:
+## Run the Program:
 
 Run the musicFromUniverse.py file in your terminal:
 
@@ -74,7 +74,7 @@ Solution: Ensure all libraries are installed by running:
 ```bash
 pip install numpy opencv-python pandas mido keyboard
 ```
-##Errors and solutions
+## Errors and solutions
 
 *Error: "FileNotFoundError"*
 
