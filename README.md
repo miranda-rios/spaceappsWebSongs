@@ -1,6 +1,5 @@
 # Proyecto: WebbSounds
 
-| ![Logo](logo.jpeg){: width="500" height="500"} |
 <table>
   <tr>
     <td align="center">
