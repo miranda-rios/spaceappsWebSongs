@@ -51,7 +51,7 @@ Edita las variables en musicFromUniverse.py según sea necesario:
 
 Ejecutar el Programa:
 
-    Corre el archivo musicFromUniverse.py en tu terminal:
+Corre el archivo musicFromUniverse.py en tu terminal:
 
 ```bash
 python musicFromUniverse.py
