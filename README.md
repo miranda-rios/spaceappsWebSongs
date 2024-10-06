@@ -13,6 +13,7 @@ Gómez-Olarte, Ramón Andrés.
 Moreno-Galeano, Froilan Esteban.  
 Zuñiga-Ballesteros, Liz Andrea. 
 
+
 ## Required Librarie
 
 To run this code, you need to install the following libraries in Python:
@@ -30,6 +31,10 @@ Additionally, you need to install loopMIDI and REAPER as supplementary software.
   link: [REAPER Download](https://www.reaper.fm/)
 
 ## Code Usage
+
+<p align="center"> <img src="Methodology.webp" width="1000" height="800" /> </p>
+
+
 Prepare the Environment:
 
 Ensure that the required libraries are installed.
