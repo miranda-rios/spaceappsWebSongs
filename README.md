@@ -1,39 +1,36 @@
-# Proyecto: WebbSounds
+#Project: WebbSounds
 
-<p align="center">
-  <img src="logo.jpeg" width="500" height="500" />
-</p>
+<p align="center"> <img src="logo.jpeg" width="500" height="500" /> </p>
 
+This project, developed by members of the astronomy research group during the NASA Space Apps 2024 event, aims to convert astronomical image data into musical notes. By utilizing image processing techniques and spectral analysis, sampled points from images are generated, and wavelengths are transformed into MIDI notes, which are sent through MIDI ports for playback.
 
+##Project Members
 
-Este proyecto, desarrollado por los integrantes del semillero de astronomía en el marco del evento NASA Space Apps 2024, tiene como objetivo convertir datos de imágenes astronómicas en notas musicales. Utilizando técnicas de procesamiento de imágenes y análisis espectral, se generan puntos muestreados de imágenes y se transforman longitudes de onda en notas MIDI, que son enviadas a través de puertos MIDI para ser reproducidas.
+  Lina Alejandra Gonzalez-Ramirez
+  Juan Steven Cardona-Grisales
+  Daniel Pino-Roman
+  Ramón Andrés Gómez-Olarte
+  Froilan Esteban Moreno-Galeano
+  Liz Andrea Zuñiga-Ballesteros
 
-## Integrantes del Proyecto
-- Lina Alejandra Gonzalez-Ramirez
-- Juan Steven Cardona-Grisales
-- Daniel Pino-Roman
-- Ramón Andrés Gómez-Olarte
-- Froilan Esteban Moreno-Galeano
-- Liz Andrea Zuñiga-Ballesteros
+##Required Libraries
 
-## Librerías Requeridas
-
-Para ejecutar este código, necesitas instalar las siguientes bibliotecas en Python:
+To run this code, you need to install the following libraries in Python:
 
 ```bash
 pip install numpy opencv-python pandas mido keyboard
 ```
 
-Uso del Código
+##Code Usage
+Prepare the Environment:
 
-  Preparar el Entorno:
-        Asegúrate de que las bibliotecas requeridas están instaladas.
+Ensure that the required libraries are installed.
+File Structure:
 
-  Estructura de Archivos:
-        Coloca el archivo de imagen (por ejemplo, NGC 7496.tif) en el directorio Imagenes.
+Place the image file (e.g., NGC 7496.tif) in the Images directory.
+Run the Main Code:
 
-  Ejecutar el Código Principal:
-        El código principal, llamado musicFromUniverse.py, gestiona el flujo de ejecución. Asegúrate de que la estructura de directorios sea la siguiente:
+The main code, named musicFromUniverse.py, manages the execution flow. Ensure that the directory structure is as follows:
 
 ```bash
 /project_directory
@@ -41,52 +38,55 @@ Uso del Código
 │   ├── a_ImageProcessor.py
 │   ├── b_WavelengthToMIDIConverter.py
 │   └── c_MIDIPortHandler.py
-├── /Imagenes
+├── /Images
 │   └── NGC 7496.tif
 └── musicFromUniverse.py
 ```
 
-Configurar Parámetros:
+##Configure Parameters:
 
-Edita las variables en musicFromUniverse.py según sea necesario:
-        image_path: Ruta de la imagen.
-        num_points: Número de puntos a muestrear.
-        outputImage_csv: Nombre del archivo CSV para guardar los puntos.
-        outputMIDI_csv: Nombre del archivo CSV para guardar las notas MIDI.
-        threshold: Umbral para la máscara de luz.
+Edit the variables in musicFromUniverse.py as needed:
 
-## Ejecutar el Programa:
+  image_path: Path to the image.
+  num_points: Number of points to sample.
+  outputImage_csv: Name of the CSV file to save the points.
+  outputMIDI_csv: Name of the CSV file to save the MIDI notes.
+  threshold: Threshold for the light mask.
 
-Corre el archivo musicFromUniverse.py en tu terminal:
+##Run the Program:
+
+Run the musicFromUniverse.py file in your terminal:
 
 ```bash
 python musicFromUniverse.py
 ```
-Interacción con el MIDI:
-        Las notas MIDI se enviarán automáticamente a través de los puertos MIDI configurados. Puedes detener la ejecución presionando la tecla Esc.
 
-## Posibles Errores y Soluciones
+MIDI Interaction:
 
-*Error: "ModuleNotFoundError"*
+MIDI notes will be automatically sent through the configured MIDI ports. You can stop execution by pressing the Esc key.
+Possible Errors and Solutions
 
-  Descripción: Una de las bibliotecas requeridas no está instalada.
-  Solución: Asegúrate de que todas las bibliotecas estén instaladas ejecutando:
- ```bash
- pip install numpy opencv-python pandas mido keyboard
- ```
+Error: "ModuleNotFoundError"
+
+Description: One of the required libraries is not installed.
+Solution: Ensure all libraries are installed by running:
+
+```bash
+pip install numpy opencv-python pandas mido keyboard
+```
+##Errors and solutions
+
 *Error: "FileNotFoundError"*
 
-  Descripción: El archivo de imagen o CSV no se encuentra en la ruta especificada.
-  Solución: Verifica que la ruta del archivo de imagen y los nombres de los archivos CSV sean correctos.
+Description: The image or CSV file is not found at the specified path.
+Solution: Verify that the path of the image file and the names of the CSV files are correct.
 
 *Error: "MIDI port not found"*
 
-  Descripción: Los puertos MIDI especificados no están disponibles.
-  Solución: Asegúrate de que los puertos MIDI estén configurados correctamente y que el software de MIDI (como loopMIDI) esté funcionando.
+Description: The specified MIDI ports are unavailable.
+Solution: Ensure that the MIDI ports are correctly configured and that MIDI software (such as loopMIDI) is running.
 
-Error: "Keyboard interrupt"
+*Error: "Keyboard interrupt"*
 
-  Descripción: El programa se detiene inesperadamente.
-  Solución: Asegúrate de que no se estén enviando mensajes MIDI a un dispositivo que no puede recibirlos o presiona Esc para detener la ejecución de manera controlada.
-
-
+Description: The program stops unexpectedly.
+Solution: Ensure that MIDI messages are not being sent to a device that cannot receive them, or press Esc to stop the execution in a controlled manner.
