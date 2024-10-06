@@ -1,12 +1,9 @@
 # Proyecto: WebbSounds
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="logo.jpeg" width="500" height="500" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="logo.jpeg" width="500" height="500" />
+</p>
+
 
 
 Este proyecto, desarrollado por los integrantes del semillero de astronomía en el marco del evento NASA Space Apps 2024, tiene como objetivo convertir datos de imágenes astronómicas en notas musicales. Utilizando técnicas de procesamiento de imágenes y análisis espectral, se generan puntos muestreados de imágenes y se transforman longitudes de onda en notas MIDI, que son enviadas a través de puertos MIDI para ser reproducidas.
