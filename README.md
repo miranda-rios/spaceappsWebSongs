@@ -6,10 +6,10 @@ This project, developed by members of the astronomy research group during the NA
 
 ## Project Members
 
-Gonzalez-Ramirez, Lina Alejandra. 
-Cardona-Grisales, Juan Steven. 
-Pino-Roman, Daniel. 
-Ramón Andrés Gómez-Olarte. 
+Gonzalez-Ramirez, Lina Alejandra.  
+Cardona-Grisales, Juan Steven.  
+Pino-Roman, Daniel.  
+Ramón Andrés Gómez-Olarte.  
 Moreno-Galeano, Froilan Esteban.  
 Zuñiga-Ballesteros, Liz Andrea. 
 
