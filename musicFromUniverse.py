@@ -4,7 +4,7 @@ from scripts.c_MIDIPortHandler import MIDIPortHandler
 
 
 # Procesamiento de imagen
-image_path = os.path.join(project_dir, "Imagenes", "NGC 7496.tif")
+image_path = os.path.join(project_dir, "Imagenes", "3.NGC_1512.tif")
 num_points = 5000
 outputImage_csv = 'puntos_seleccionados.csv'  # Archivo CSV para guardar puntos
 outputMIDI_csv = 'midi_notes.csv'  # Archivo que contiene las notas MIDI
