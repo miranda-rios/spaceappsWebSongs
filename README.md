@@ -49,7 +49,7 @@ Edita las variables en musicFromUniverse.py según sea necesario:
         outputMIDI_csv: Nombre del archivo CSV para guardar las notas MIDI.
         threshold: Umbral para la máscara de luz.
 
-Ejecutar el Programa:
+## Ejecutar el Programa:
 
 Corre el archivo musicFromUniverse.py en tu terminal:
 
@@ -59,7 +59,7 @@ python musicFromUniverse.py
 Interacción con el MIDI:
         Las notas MIDI se enviarán automáticamente a través de los puertos MIDI configurados. Puedes detener la ejecución presionando la tecla Esc.
 
-Posibles Errores y Soluciones
+## Posibles Errores y Soluciones
 
 *Error: "ModuleNotFoundError"*
 
@@ -68,12 +68,12 @@ Posibles Errores y Soluciones
  ```bash
  pip install numpy opencv-python pandas mido keyboard
  ```
-Error: "FileNotFoundError"
+*Error: "FileNotFoundError"*
 
   Descripción: El archivo de imagen o CSV no se encuentra en la ruta especificada.
   Solución: Verifica que la ruta del archivo de imagen y los nombres de los archivos CSV sean correctos.
 
-Error: "MIDI port not found"
+*Error: "MIDI port not found"*
 
   Descripción: Los puertos MIDI especificados no están disponibles.
   Solución: Asegúrate de que los puertos MIDI estén configurados correctamente y que el software de MIDI (como loopMIDI) esté funcionando.
