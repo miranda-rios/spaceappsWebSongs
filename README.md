@@ -6,14 +6,14 @@ This project, developed by members of the astronomy research group during the NA
 
 ## Project Members
 
-  Lina Alejandra Gonzalez-Ramirez
-  Juan Steven Cardona-Grisales
-  Daniel Pino-Roman
+  Gonzalez-Ramirez, Lina Alejandra 
+  Cardona-Grisales, Juan Steven 
+  Pino-Roman, Daniel
   Ramón Andrés Gómez-Olarte
-  Froilan Esteban Moreno-Galeano
-  Liz Andrea Zuñiga-Ballesteros
+  Moreno-Galeano, Froilan Esteban 
+  Zuñiga-Ballesteros, Liz Andrea 
 
-## Required Libraries
+## Required Librarie
 
 To run this code, you need to install the following libraries in Python:
 
